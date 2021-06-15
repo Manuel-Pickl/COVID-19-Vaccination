@@ -1,6 +1,6 @@
 // paths
 const worldSvgPath = "src/Simple World Map.svg";
-const dataCsv = "Data Transformation/world_vaccination.csv";
+const dataCsv = "data_transformation/world_vaccination.csv";
 const isoCodesCsv = "src/countries_codes_and_coordinates.csv";
 
 // table data

@@ -143,6 +143,10 @@ EVENTS
 */
 function mouseover(e) {
   e.target.classList.add("highlight");
+  let iso_2 = e.target.id == "" ? e.target.parentElement.id : e.target.id;
+  foreachCountry(function(country) {
+    if (country.id == iso_2) country.classList.add("highlight");
+  });
   drawInfoPanel(e.target);
 }
 function mouseleave() {
