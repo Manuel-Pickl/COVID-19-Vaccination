@@ -99,47 +99,7 @@ function drawWorld() {
     country.addEventListener("mouseleave", mouseleave);
   });
 }
-
-
-
-/*
-EVENTS
-*/
-function mouseover(e) {
-  e.target.classList.add("highlight");
-  updateInfoPanel(e.target);
-}
-function mouseleave() {
-  resetHighlights();
-}
-
-
-
-/*
-INTERACTIVE VISUALS
-*/
-function highlightCountryByGroup(country, vaccineCount, groupIndex) {
-  if ((groupIndex == 0 && vaccineCount == 0)
-    || groupIndex == 1 && (vaccineCount < group1End && vaccineCount > 0)
-    || groupIndex == 2 && (vaccineCount < group2End && vaccineCount >= group1End)
-    || groupIndex == 3 && (vaccineCount < group3End && vaccineCount >= group2End)
-    || groupIndex == 4 && (vaccineCount < group4End && vaccineCount >= group3End)
-    || groupIndex == 5 && (vaccineCount < group5End && vaccineCount >= group4End)
-    || groupIndex == 6 && (vaccineCount < group6End && vaccineCount >= group5End)
-    || groupIndex == 7 && (vaccineCount < group7End && vaccineCount >= group6End)
-    || groupIndex == 8 && vaccineCount >= group7End)
-  {
-    country.classList.add("highlight");
-  }
-  else country.classList.add("transparent");
-}
-function updateInfoPanel(country) {
-  let offset = 10;
-  let xPos = mouseX + offset;
-  if (xPos + infoPanel.width > windowWidth) xPos -= infoPanel.width + 2*offset;
-  infoPanel.position(xPos, mouseY - offset - infoPanel.height);
-  infoPanel.show();
-
+function drawInfoPanel(country) {
   let iso2 = country.id == "" ? country.parentElement.id : country.id;
   
   for (let i = 0; i < countryCount; i++) {
@@ -166,6 +126,48 @@ function updateInfoPanel(country) {
   }
   
   infoPanel.html(infoPanelText);
+
+  let offset = 10;
+  let xPos = mouseX + offset;
+  if (xPos + infoPanel.width > windowWidth) xPos -= infoPanel.width + 2*offset;
+  let yPos = mouseY - offset;
+  if (mouseY > windowHeight/2) yPos -= 100 + 2*offset;
+  infoPanel.position(xPos, yPos);
+  infoPanel.show();
+}
+
+
+
+/*
+EVENTS
+*/
+function mouseover(e) {
+  e.target.classList.add("highlight");
+  drawInfoPanel(e.target);
+}
+function mouseleave() {
+  resetHighlights();
+}
+
+
+
+/*
+INTERACTIVE VISUALS
+*/
+function highlightCountryByGroup(country, vaccineCount, groupIndex) {
+  if ((groupIndex == 0 && vaccineCount == 0)
+    || groupIndex == 1 && (vaccineCount < group1End && vaccineCount > 0)
+    || groupIndex == 2 && (vaccineCount < group2End && vaccineCount >= group1End)
+    || groupIndex == 3 && (vaccineCount < group3End && vaccineCount >= group2End)
+    || groupIndex == 4 && (vaccineCount < group4End && vaccineCount >= group3End)
+    || groupIndex == 5 && (vaccineCount < group5End && vaccineCount >= group4End)
+    || groupIndex == 6 && (vaccineCount < group6End && vaccineCount >= group5End)
+    || groupIndex == 7 && (vaccineCount < group7End && vaccineCount >= group6End)
+    || groupIndex == 8 && vaccineCount >= group7End)
+  {
+    country.classList.add("highlight");
+  }
+  else country.classList.add("transparent");
 }
 function resetHighlights() {
   foreachCountry(function(country) {
