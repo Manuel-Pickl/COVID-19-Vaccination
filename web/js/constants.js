@@ -1,7 +1,6 @@
 // paths
-const worldSvgPath = "src/Simple World Map.svg";
-const dataCsv = "data_transformation/world_vaccination.csv";
-const isoCodesCsv = "src/countries_codes_and_coordinates.csv";
+const worldSvgPath = "../data/web/Simple World Map.svg";
+const dataCsv = "../data/web/world_vaccination.csv";
 
 // table data
 const isoColumn = "iso_code";
@@ -25,4 +24,3 @@ const group8End = ">50";
 // title
 const title = "COVID-19 Vaccination around the World";
 const subtitle = "Share of the total population that received at least one vaccine dose.";
-// const title = "Share of people who received at least one dose of COVID-19 vaccine";
