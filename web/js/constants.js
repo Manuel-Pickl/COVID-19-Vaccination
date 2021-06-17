@@ -1,5 +1,5 @@
 // paths
-const worldSvgPath = "Simple World Map.svg";
+const worldSvgPath = "src/Simple World Map.svg";
 const dataCsv = "../data/world_vaccination.csv";
 
 // table data
