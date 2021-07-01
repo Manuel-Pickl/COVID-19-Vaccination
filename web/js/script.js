@@ -114,19 +114,64 @@ function drawInfoPanel(country) {
     }
   }
 
-  let infoPanelText = '<p class="countryName">' + countryName + "</p>";
+  // create info panel element
+  let infoPanelDiv = document.createElement("div");
+
+  // title
+  let title = document.createElement("div");
+  title.classList.add("title");
+  // country name
+  title.appendChild(document.createTextNode(countryName));
+  // flag
+  let flagElement = document.createElement("img");
+  let flagPath = 'https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/' + iso2 + '.svg';
+  flagElement.src = flagPath;
+  title.appendChild(flagElement);
+
+  // add elements to info panel
+  infoPanelDiv.appendChild(title);
+
   if (firstVaccination != 0) {
-    infoPanelText +=
-      '<p class="percentage">' + firstVaccinationRate + "%</p>" +
-      '<p class="subtest">first: ' + firstVaccination + "<br>" +
-      "full: " + fullVaccination + '</p>';
+    // percentage
+    let percentage = document.createElement("div");
+    percentage.classList.add("percentage");
+    percentage.appendChild(document.createTextNode(firstVaccinationRate + '%'));
+
+    // absolute numbers
+    let absoluteNumbers = document.createElement("div");
+    absoluteNumbers.classList.add("absolute");
+    let firstVaccinationHeader = document.createElement("p");
+    firstVaccinationHeader.appendChild(document.createTextNode("First Vaccination"));
+    absoluteNumbers.appendChild(firstVaccinationHeader);
+    let firstVaccinationNumber = document.createElement("h1");
+    firstVaccinationNumber.appendChild(document.createTextNode(firstVaccination));
+    absoluteNumbers.appendChild(firstVaccinationNumber);
+    let fullVaccinationHeader = document.createElement("p");
+    fullVaccinationHeader.appendChild(document.createTextNode("Full Vaccination"));
+    absoluteNumbers.appendChild(fullVaccinationHeader);
+    let fullVaccinationNumber = document.createElement("h1");
+    fullVaccinationNumber.appendChild(document.createTextNode(fullVaccination));
+    absoluteNumbers.appendChild(fullVaccinationNumber);
+
+    // add elements to info panel
+    infoPanelDiv.appendChild(title);
+    infoPanelDiv.appendChild(percentage);
+    infoPanelDiv.appendChild(document.createElement("hr"));
+    infoPanelDiv.appendChild(absoluteNumbers);
   }
   else {
-    infoPanelText += '<p class="percentage">no data</p>';
+    let noData = document.createElement("h1");
+    noData.appendChild(document.createTextNode("no data"));
+    infoPanelDiv.appendChild(document.createElement("hr"));
+    infoPanelDiv.appendChild(noData);
   }
-  
-  infoPanel.html(infoPanelText);
+   
 
+  // clear old data of infopanel
+  infoPanel.child().forEach(child => child.remove());
+  infoPanel.child(infoPanelDiv);
+
+  // positioning  
   let offset = 10;
   let xPos = mouseX + offset;
   if (xPos + infoPanel.width > windowWidth) xPos -= infoPanel.width + 2*offset;

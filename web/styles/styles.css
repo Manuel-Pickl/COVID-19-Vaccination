@@ -1,3 +1,6 @@
+/*
+GENERAL
+*/
 * {
     box-sizing: border-box;
 }
@@ -5,6 +8,7 @@ body {
     margin: 0;
     background: rgb(97, 218, 255);
 }
+
 
 /* interactive visualization */
 .highlight {
@@ -29,29 +33,47 @@ body {
     display: inline-block;
     min-width: 130px;
     opacity: 0.9;
-    border: solid 1px lightgray;
+    border: solid 1px darkgray;
     background-color: white;
     text-align: center;
 }
-.countryName {
-    color:rgb(25,25,25);
-    font-size: 17px;
-    margin-bottom: 6px;
-    margin-top: 6px;
-}
-.percentage {
-    color:rgb(25,25,25);
-    font-weight: bold;
-    font-size: 20px;
-    margin-top: 0px;
-    margin-bottom: 3px;
-}
-.vaccineNumbers {
-    color:rgb(25,25,25);
-    font-size: 14px;
-    margin-top: 0px;
+#infoPanel hr {
+    margin: 10px;
+    border: none;
+    height: 1px;
+    background-color: darkgray;
 }
 
+.title img {
+    height: 1.8ex;
+    margin: 0 8px;
+    border: solid 1px lightslategray
+}
+.title {
+    font-size: 1.5em;
+    margin: 15px;
+}
+
+.percentage {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0.7em;
+}
+
+.absolute {
+    margin: 15px;
+    text-align: left;
+}
+.absolute p {
+    font-size: 1.1em;
+    text-decoration: underline;
+    margin: 0;
+}
+#infoPanel h1 {
+    margin: 3px 0 15px 0;
+    padding-left: 10px;
+    font-size: 1.3em;
+}
 
 
 /*
