@@ -17,7 +17,6 @@ function preload() {
 }
 function setup() {
   countryCount = table.getRowCount();
-  fill(color(25,25,25));              // set website text color
   createMap();                        // create map elements
   drawMap();                          // draw map elements
 }
@@ -67,7 +66,6 @@ function drawMap() {
   drawWorld();
 }
 function drawHeader() {
-  fill(50,50,50);
   textAlign(CENTER);
   textSize(34);
   text(title, windowWidth/2, 50);
@@ -75,6 +73,7 @@ function drawHeader() {
   text(subtitle, windowWidth/2, 70);
 }
 function drawRibbon() {
+  textStyle(BOLD);
   textSize(14);
   textAlign(LEFT);
   let groupHeight = windowHeight * 0.1;
@@ -181,10 +180,11 @@ function drawInfoPanel(country) {
   infoPanel.show();
 
   let offset = 8;
+  let windowPadding = 15;
   let xPos = mouseX + offset;
   let yPos = mouseY + offset;
-  if (mouseX + infoPanel.size().width > windowWidth) xPos -= infoPanel.size().width + 2 * offset;
-  if (mouseY + infoPanel.size().height > windowHeight) yPos -= infoPanel.size().height + 2 * offset;
+  if (xPos + infoPanel.size().width > windowWidth - windowPadding) xPos -= infoPanel.size().width + 2 * offset;
+  if (yPos + infoPanel.size().height > windowHeight - windowPadding) yPos -= infoPanel.size().height + 2 * offset;
   infoPanel.position(xPos, yPos);
 }
 
@@ -193,12 +193,20 @@ function drawInfoPanel(country) {
 EVENTS
 */
 function mouseover(e) {
-  e.target.classList.add("highlight");
-  let iso_2 = e.target.id == "" ? e.target.parentElement.id : e.target.id;
-  foreachCountry(function(country) {
-    if (country.id == iso_2) country.classList.add("highlight");
-  });
-  drawInfoPanel(e.target);
+  let country = e.target.id == "" ? e.target.parentElement : e.target;
+  
+  // highlight country
+  country.classList.add("highlight");
+
+  // highlight country group
+  let groupIndex = 0;
+  country.classList.forEach(className => {
+    if (className.includes("vaccine")) groupIndex = className.slice(-1);;
+  })
+  document.getElementById("groupDiv" + groupIndex).classList.add("highlight");  
+
+  // draw infopanel
+  drawInfoPanel(country);
 }
 function mouseleave() {
   resetHighlights();
