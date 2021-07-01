@@ -67,6 +67,7 @@ function drawMap() {
   drawWorld();
 }
 function drawHeader() {
+  fill(50,50,50);
   textAlign(CENTER);
   textSize(34);
   text(title, windowWidth/2, 50);
@@ -140,12 +141,14 @@ function drawInfoPanel(country) {
     // absolute numbers
     let absoluteNumbers = document.createElement("div");
     absoluteNumbers.classList.add("absolute");
+    // absolute first vaccination
     let firstVaccinationHeader = document.createElement("p");
     firstVaccinationHeader.appendChild(document.createTextNode("First Vaccination"));
     absoluteNumbers.appendChild(firstVaccinationHeader);
     let firstVaccinationNumber = document.createElement("h1");
     firstVaccinationNumber.appendChild(document.createTextNode(firstVaccination));
     absoluteNumbers.appendChild(firstVaccinationNumber);
+    // absolute full vaccination
     let fullVaccinationHeader = document.createElement("p");
     fullVaccinationHeader.appendChild(document.createTextNode("Full Vaccination"));
     absoluteNumbers.appendChild(fullVaccinationHeader);
@@ -160,27 +163,30 @@ function drawInfoPanel(country) {
     infoPanelDiv.appendChild(absoluteNumbers);
   }
   else {
+    // no data text
     let noData = document.createElement("h1");
     noData.appendChild(document.createTextNode("no data"));
     infoPanelDiv.appendChild(document.createElement("hr"));
     infoPanelDiv.appendChild(noData);
   }
    
-
   // clear old data of infopanel
   infoPanel.child().forEach(child => child.remove());
+
+  // append information
   infoPanel.child(infoPanelDiv);
 
   // positioning  
-  let offset = 10;
-  let xPos = mouseX + offset;
-  if (xPos + infoPanel.width > windowWidth) xPos -= infoPanel.width + 2*offset;
-  let yPos = mouseY - offset;
-  if (mouseY > windowHeight/2) yPos -= 100 + 2*offset;
-  infoPanel.position(xPos, yPos);
+  infoPanel.position(0, 0);
   infoPanel.show();
-}
 
+  let offset = 8;
+  let xPos = mouseX + offset;
+  let yPos = mouseY + offset;
+  if (mouseX + infoPanel.size().width > windowWidth) xPos -= infoPanel.size().width + 2 * offset;
+  if (mouseY + infoPanel.size().height > windowHeight) yPos -= infoPanel.size().height + 2 * offset;
+  infoPanel.position(xPos, yPos);
+}
 
 
 /*

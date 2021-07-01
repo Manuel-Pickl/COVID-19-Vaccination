@@ -1,6 +1,3 @@
-/*
-GENERAL
-*/
 * {
     box-sizing: border-box;
 }
@@ -30,8 +27,6 @@ body {
 
 /* info panel */
 #infoPanel {
-    display: inline-block;
-    min-width: 130px;
     opacity: 0.9;
     border: solid 1px darkgray;
     background-color: white;
