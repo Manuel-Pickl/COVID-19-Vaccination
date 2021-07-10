@@ -1,0 +1,231 @@
+iso_code,location,people_vaccinated,people_fully_vaccinated,people_vaccinated_per_hundred
+af,Afghanistan,735213.0,199250.0,1.89
+OWID_AFR,Africa,37858556.0,17528350.0,2.82
+al,Albania,582106.0,429191.0,20.23
+dz,Algeria,2500000.0,,5.7
+ad,Andorra,41716.0,26613.0,53.99
+ao,Angola,951772.0,561688.0,2.9
+ai,Anguilla,9300.0,7160.0,61.99
+ag,Antigua and Barbuda,36749.0,28074.0,37.53
+ar,Argentina,18869175.0,4852930.0,41.75
+am,Armenia,58518.0,16196.0,1.97
+aw,Aruba,68855.0,61266.0,64.49
+OWID_ASI,Asia,1170236055.0,410753553.0,25.22
+au,Australia,6607324.0,2099475.0,25.91
+at,Austria,4979265.0,3595383.0,55.29
+az,Azerbaijan,2417173.0,1546929.0,23.84
+bs,Bahamas,59731.0,36261.0,15.19
+bh,Bahrain,1081364.0,1013728.0,63.55
+bd,Bangladesh,5823245.0,4283575.0,3.54
+bb,Barbados,95695.0,71703.0,33.3
+by,Belarus,699141.0,369272.0,7.4
+be,Belgium,7487772.0,4466179.0,64.61
+bz,Belize,99591.0,36578.0,25.05
+bj,Benin,36188.0,9920.0,0.3
+bm,Bermuda,,,
+bt,Bhutan,484820.0,1306.0,62.83
+bo,Bolivia,1927217.0,720327.0,16.51
+BES,Bonaire Sint Eustatius and Saba,5726.0,1665.0,21.84
+ba,Bosnia and Herzegovina,306429.0,163789.0,9.34
+bw,Botswana,161426.0,106337.0,6.86
+br,Brazil,83713097.0,29493829.0,39.38
+vg,British Virgin Islands,12993.0,9254.0,42.97
+bn,Brunei,90500.0,17267.0,20.69
+bg,Bulgaria,993887.0,841794.0,14.3
+bf,Burkina Faso,25833.0,,0.12
+kh,Cambodia,4750265.0,3522021.0,28.41
+cm,Cameroon,88333.0,21991.0,0.33
+ca,Canada,26093012.0,15219854.0,69.13
+cv,Cape Verde,89680.0,10006.0,16.13
+ky,Cayman Islands,48764.0,45504.0,74.2
+cf,Central African Republic,78685.0,,1.63
+td,Chad,15966.0,4512.0,0.1
+cl,Chile,12978369.0,11028911.0,67.89
+cn,China,,,
+co,Colombia,12547379.0,8060751.0,24.66
+km,Comoros,,,
+cg,Congo,116110.0,,2.1
+ck,Cook Islands,9755.0,9187.0,55.54
+cr,Costa Rica,1704864.0,816931.0,33.47
+ci,Cote d'Ivoire,825286.0,,3.13
+hr,Croatia,1526876.0,1214375.0,37.19
+cu,Cuba,2966587.0,1664980.0,26.19
+CUW,Curacao,89474.0,79405.0,54.52
+cy,Cyprus,471757.0,395335.0,53.13
+cz,Czechia,5183731.0,3708711.0,48.41
+cd,Democratic Republic of Congo,,,
+dk,Denmark,3585357.0,2272761.0,61.9
+dj,Djibouti,,,
+dm,Dominica,20390.0,19548.0,28.32
+do,Dominican Republic,5131732.0,3403094.0,47.31
+ec,Ecuador,3360276.0,1598116.0,19.05
+eg,Egypt,3580443.0,979639.0,3.5
+sv,El Salvador,1891203.0,1245721.0,29.16
+OWID_ENG,England,38252354.0,28669736.0,67.96
+gq,Equatorial Guinea,160525.0,116517.0,11.44
+ee,Estonia,577526.0,431476.0,43.54
+sz,Eswatini,37402.0,11124.0,3.22
+et,Ethiopia,,,
+OWID_EUR,Europe,325230087.0,230777922.0,43.44
+OWID_EUN,European Union,236803868.0,167347538.0,53.22
+fo,Faeroe Islands,31781.0,21811.0,65.04
+fk,Falkland Islands,2632.0,1775.0,75.57
+fj,Fiji,324462.0,54737.0,36.19
+fi,Finland,3412775.0,1223125.0,61.59
+fr,France,34904228.0,23509826.0,51.66
+pf,French Polynesia,71242.0,61298.0,25.36
+ga,Gabon,42022.0,22139.0,1.89
+gm,Gambia,31150.0,11825.0,1.29
+ge,Georgia,283631.0,111589.0,7.11
+de,Germany,47872792.0,33909828.0,57.14
+gh,Ghana,864918.0,396759.0,2.78
+gi,Gibraltar,39259.0,38866.0,116.53
+gr,Greece,5162882.0,4151907.0,49.53
+gl,Greenland,31311.0,15435.0,55.15
+gd,Grenada,20023.0,14308.0,17.8
+gt,Guatemala,827180.0,175779.0,4.62
+gg,Guernsey,,,
+gn,Guinea,472402.0,248462.0,3.6
+gw,Guinea-Bissau,21855.0,1463.0,1.11
+gy,Guyana,237111.0,116903.0,30.15
+OWID_HIC,High income,614901656.0,439762662.0,48.68
+hn,Honduras,845456.0,58125.0,8.54
+hk,Hong Kong,2509191.0,1697849.0,33.47
+hu,Hungary,5523878.0,5126330.0,57.18
+is,Iceland,264783.0,238843.0,77.59
+in,India,298678913.0,70312309.0,21.64
+id,Indonesia,34860686.0,14622502.0,12.75
+ir,Iran,4076904.0,1641010.0,4.85
+iq,Iraq,699325.0,388541.0,1.74
+ie,Ireland,2706335.0,1920762.0,54.81
+im,Isle of Man,64150.0,48520.0,75.44
+il,Israel,5712642.0,5189094.0,66.0
+it,Italy,34827666.0,21738061.0,57.6
+jm,Jamaica,172958.0,77025.0,5.84
+jp,Japan,36053625.0,21296599.0,28.51
+je,Jersey,71444.0,55110.0,70.69
+jo,Jordan,2586787.0,1593593.0,25.35
+kz,Kazakhstan,4020128.0,2283761.0,21.41
+ke,Kenya,1021982.0,489711.0,1.9
+OWID_KOS,Kosovo,182669.0,60759.0,9.45
+kw,Kuwait,1452148.0,923307.0,34.0
+kg,Kyrgyzstan,99900.0,73800.0,1.53
+la,Laos,956535.0,595647.0,13.15
+lv,Latvia,689233.0,599466.0,36.54
+lb,Lebanon,993893.0,524368.0,14.56
+ls,Lesotho,36637.0,19685.0,1.71
+lr,Liberia,85137.0,6904.0,1.68
+ly,Libya,393688.0,,5.73
+li,Liechtenstein,19583.0,14045.0,51.35
+lt,Lithuania,1264021.0,1105881.0,46.43
+OWID_LIC,Low income,7739365.0,1353114.0,1.0
+OWID_LMC,Lower middle income,418584432.0,126755818.0,13.51
+lu,Luxembourg,362367.0,236897.0,57.89
+mo,Macao,256136.0,140317.0,39.45
+mg,Madagascar,197001.0,,0.71
+mw,Malawi,385242.0,43165.0,2.01
+my,Malaysia,7222481.0,3190789.0,22.32
+mv,Maldives,317762.0,206245.0,58.79
+ml,Mali,141529.0,48772.0,0.7
+mt,Malta,367086.0,344666.0,83.14
+mr,Mauritania,163150.0,11478.0,3.51
+mu,Mauritius,486034.0,220914.0,38.22
+mx,Mexico,34155903.0,20355222.0,26.49
+md,Moldova,475466.0,298721.0,11.79
+mc,Monaco,20178.0,17694.0,51.42
+mn,Mongolia,2100918.0,1787254.0,64.09
+me,Montenegro,156459.0,142913.0,24.91
+ms,Montserrat,1418.0,1233.0,28.37
+ma,Morocco,10317807.0,9213535.0,27.95
+mz,Mozambique,354572.0,153612.0,1.13
+mm,Myanmar,,,
+na,Namibia,127220.0,27539.0,5.01
+nr,Nauru,7499.0,1814.0,69.22
+np,Nepal,2611807.0,851300.0,8.96
+nl,Netherlands,11182551.0,6709824.0,65.26
+nc,New Caledonia,60764.0,54454.0,21.28
+nz,New Zealand,768867.0,501852.0,15.94
+ni,Nicaragua,167500.0,,2.53
+ne,Niger,363018.0,60317.0,1.5
+ng,Nigeria,2476637.0,1355822.0,1.2
+nu,Niue,1184.0,32.0,73.18
+OWID_NAM,North America,259254044.0,202577103.0,43.79
+mk,North Macedonia,400235.0,243727.0,19.21
+OWID_CYN,Northern Cyprus,75463.0,54280.0,19.74
+OWID_NIR,Northern Ireland,1179096.0,920078.0,62.27
+no,Norway,2954412.0,1580849.0,54.5
+OWID_OCE,Oceania,8021049.0,2800898.0,18.79
+om,Oman,1229331.0,251618.0,24.07
+pk,Pakistan,,3530044.0,
+ps,Palestine,536130.0,385465.0,10.51
+pa,Panama,1075577.0,588425.0,24.93
+pg,Papua New Guinea,50460.0,710.0,0.56
+py,Paraguay,645039.0,135971.0,9.04
+pe,Peru,5063967.0,3456190.0,15.36
+ph,Philippines,9399801.0,3089976.0,8.58
+pn,Pitcairn,47.0,,100.0
+pl,Poland,17315918.0,14727053.0,45.75
+pt,Portugal,5953680.0,3994952.0,58.39
+qa,Qatar,1839827.0,1529336.0,63.86
+ro,Romania,4784787.0,4624412.0,24.87
+ru,Russia,27056132.0,18514799.0,18.54
+rw,Rwanda,392003.0,251963.0,3.03
+sh,Saint Helena,4361.0,3531.0,71.83
+kn,Saint Kitts and Nevis,22972.0,18984.0,43.19
+lc,Saint Lucia,31127.0,22386.0,16.95
+vc,Saint Vincent and the Grenadines,,,
+ws,Samoa,52907.0,9254.0,26.67
+sm,San Marino,22485.0,22485.0,66.25
+st,Sao Tome and Principe,22463.0,11533.0,10.25
+sa,Saudi Arabia,17198807.0,2063872.0,49.4
+OWID_SCT,Scotland,3900864.0,2825886.0,71.4
+sn,Senegal,549768.0,201361.0,3.28
+rs,Serbia,2729560.0,2589415.0,40.11
+sc,Seychelles,71490.0,68135.0,72.7
+sl,Sierra Leone,82145.0,15170.0,1.03
+sg,Singapore,3729907.0,2203272.0,63.76
+SXM,Sint Maarten (Dutch part),21649.0,17811.0,50.49
+sk,Slovakia,2109443.0,1726744.0,38.64
+si,Slovenia,842589.0,730322.0,40.53
+sb,Solomon Islands,18050.0,3692.0,2.63
+so,Somalia,149996.0,85886.0,0.94
+za,South Africa,3639039.0,1253978.0,6.14
+OWID_SAM,South America,144138517.0,61627218.0,33.46
+kr,South Korea,15514017.0,5654835.0,30.26
+ss,South Sudan,45074.0,3387.0,0.4
+es,Spain,27277127.0,20528505.0,58.34
+lk,Sri Lanka,3396167.0,1320528.0,15.86
+sd,Sudan,554095.0,123862.0,1.26
+sr,Suriname,166063.0,39288.0,28.31
+se,Sweden,5438339.0,3512963.0,53.85
+ch,Switzerland,4450411.0,3257963.0,51.42
+sy,Syria,102319.0,5957.0,0.58
+tw,Taiwan,3060361.0,60720.0,12.85
+tj,Tajikistan,205619.0,18029.0,2.16
+th,Thailand,8800155.0,3175841.0,12.61
+tl,Timor,218164.0,26333.0,16.55
+tg,Togo,270784.0,76462.0,3.27
+to,Tonga,28667.0,,27.12
+tt,Trinidad and Tobago,225307.0,137276.0,16.1
+tn,Tunisia,1444152.0,608332.0,12.22
+tr,Turkey,37318116.0,16639474.0,44.25
+tm,Turkmenistan,32240.0,9753.0,0.53
+tc,Turks and Caicos Islands,23846.0,21496.0,61.59
+tv,Tuvalu,4772.0,,40.47
+ug,Uganda,1027036.0,,2.25
+ua,Ukraine,2223406.0,1082602.0,5.08
+ae,United Arab Emirates,7417751.0,6428717.0,75.0
+gb,United Kingdom,45601445.0,34198779.0,67.17
+us,United States,183237046.0,158287566.0,54.79
+OWID_UMC,Upper middle income,903496143.0,358182566.0,34.03
+uy,Uruguay,2343849.0,1898369.0,67.47
+uz,Uzbekistan,2074701.0,1199541.0,6.2
+vu,Vanuatu,10480.0,,3.41
+ve,Venezuela,2284343.0,223858.0,8.03
+vn,Vietnam,3734268.0,249532.0,3.84
+OWID_WLS,Wales,2269131.0,1783079.0,71.97
+wf,Wallis and Futuna,4569.0,4393.0,40.63
+OWID_WRL,World,1944738308.0,926065044.0,24.95
+ye,Yemen,268753.0,,0.9
+zm,Zambia,142198.0,29040.0,0.77
+zw,Zimbabwe,819058.0,579699.0,5.51
