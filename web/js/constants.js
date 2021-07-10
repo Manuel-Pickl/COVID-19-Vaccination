@@ -23,4 +23,4 @@ const group8End = ">50";
 
 // title
 const title = "COVID-19 Vaccination around the World";
-const subtitle = "Share of the total population that received at least one vaccine dose.";
+const subtitle = "Share of the total population that received at least one vaccine dose, Jul 7, 2021.";
