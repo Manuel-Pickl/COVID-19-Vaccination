@@ -104,7 +104,7 @@ function drawInfoPanel(country) {
   
   for (let i = 0; i < countryCount; i++) {
     let dataRecord = table.rows[i];
-    if (dataRecord.get('iso_code') == iso2)
+    if (dataRecord.get(isoColumn) == iso2)
     {
       var countryName = dataRecord.get(countryNameColumn);
       var firstVaccinationRate = numberWithPoints(dataRecord.get(firstVaccinationRateColumn));

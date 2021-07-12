@@ -6,7 +6,6 @@ const dataCsv = "src/world_vaccination.csv";
 const isoColumn = "iso_code";
 const countryNameColumn = "location";
 const firstVaccinationRateColumn = "people_vaccinated_per_hundred";
-const fullVaccinationRateColumn = "people_fully_vaccinated_per_hundred";
 const firstVaccinationColumn = "people_vaccinated";
 const fullVaccinationColumn = "people_fully_vaccinated";
 
